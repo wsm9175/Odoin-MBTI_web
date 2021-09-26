@@ -1,0 +1,7 @@
+body{
+      background-color: pink;
+}
+/* * - css 선택자 모든 것에 적용 */
+*{
+      font-family: 'Nanum Pen Script', cursive;
+}
