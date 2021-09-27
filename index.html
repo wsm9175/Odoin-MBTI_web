@@ -11,61 +11,82 @@
             rel="stylesheet"
             integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
             crossorigin="anonymous">
-      <!-- 폰트 스타일 정의 - 구글 폰트 -->
+        <!-- 폰트 스타일 정의 - 구글 폰트 -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
             crossorigin="crossorigin">
         <link
-            href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Gugi&display=swap"
             rel="stylesheet">
-      <!-- css 파일 연결 -->
+        <!-- css 파일 연결 -->
         <link rel="stylesheet" href="./css/default.css">
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="css/qna.css">
         <link rel="stylesheet" href="css/animation.css">
-        
+        <link rel="stylesheet" href="css/result.css">
     </head>
     <body>
         <!-- bootstrap이 적용될 container 정의 -->
         <div class="container">
             <!-- main 구역 생성 -->
-            <section id="main" class="mx-auto mt-5 pb-5 pt-5 py-5 px-3">
+            <section id="main" class="mx-auto my-5 pb-5 pt-5 py-5 px-3">
                 <!-- 웹 사이트 제목 -->
-                <h1>유진찡과 함께 하는 MBTI project!!!!</h1>
+                <h1>내가 만약 오도인 속 인물이라면?</h1>
                 <!-- 메인 이미지 -->
                 <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
-                    <img
-                        src="img/KakaoTalk_20210926_204629204.jpg"
-                        alt="mainImage"
-                        class="img-fluid">
+                    <img src="img/tiger.svg" alt="mainImage" class="img-fluid">
                 </div>
                 <!-- 메인 설명 글 -->
                 <p>
                     설명 글을 적어주세용<br>
                     아래 시작하기 버튼을 눌러 시작해주세요
                 </p>
-                <!-- mbti 테스트 시작! -->
-                <button type="button" class="btn btn-outline-danger mt-3" onclick="js:begin()">시작하기</button>
+                <div class="startButton">
+                    <!-- mbti 테스트 시작! -->
+                    <button
+                        type="button"
+                        class="btn btn-outline-danger my-3 py-3 mx-auto btn_start"
+                        onclick="js:begin()">시작하기(인간 버전)</button>
+                    <button
+                        type="button"
+                        class="btn btn-outline-danger  my-3 py-3 mx-auto btn_start"
+                        onclick="js:begin()">시작하기(오도인 버전)</button>
+                </div>
             </section>
 
             <section id="qna">
-                  <div class = "qBox">
- 
-                  </div>
+                <div class="status mx-auto mt-5">
+                    <div class="statusBar"></div>
 
-                  <div class="answerBox">
+                </div>
+                <div class="qBox my-5 py-3  mx-auto"></div>
 
-                  </div>
+                <div class="answerBox"></div>
             </section>
 
-            <section id="result"></section>
+            <section id="result" class="mx-auto my-5 pb-5 pt-5 py-5 px-3">
+                <h1>MBTI 결과 명시</h1>
+                <div class="resultname"></div>
+
+                <div id="resultImg" class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+                    <img
+                        src="img/KakaoTalk_20210926_204629204.jpg"
+                        alt="mainImage"
+                        class="img-fluid">
+                </div>
+
+                <div class="resultDesc"></div>
+
+                <button type="button">카카오톡 공유하기</button>
+
+            </section>
             <!-- 자바 스크립트 파일 연결 -->
             <script src="./js/data.js" charset="utf-8"></script>
             <script src="./js/start.js" charset="utf-8"></script>
         </div>
-        </div>
-    </body>
-    </body>
+    </div>
+</body>
+</body>
 </html>
