@@ -14,4 +14,15 @@ const qnaList  = [
                   { answer : 'b. 10월16일인가??', type: ['INFP, INTP'] }
             ]
       }
-];
+]
+
+const infoList = [
+      {
+            name: '이뿌니만 바라보는 해바라기',
+            desc: '나랑 결혼해줘'
+      },
+      {
+            name: '이뿌니만 바라보는 해바라기2',
+            desc: '나랑 결혼해줘'
+      }
+]
