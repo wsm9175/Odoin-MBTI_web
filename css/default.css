@@ -4,10 +4,9 @@ body{
       background: -webkit-linear-gradient(top,  rgb(254,252,234) 100%,rgb(241,218,54) 100%); 
       background: linear-gradient(to bottom,  rgb(254,252,234) 100%,rgb(241,218,54) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 );
-
 }
 
 /* * - css 선택자 모든 것에 적용 */
 *{
-      font-family: 'Gugi', cursive;
+      font-family: 'East Sea Dokdo', cursive;
 }
