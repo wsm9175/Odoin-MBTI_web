@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const morgan = require('morgan');
 
 const app = express();//서버생성
 app.set('port',process.env.PORT || 3000);
@@ -8,6 +9,7 @@ app.use(express.urlencoded({extended:false}));
 app.use(express.static(__dirname+'/css'));
 app.use(express.static(__dirname+'/js'));
 app.use(express.static(__dirname+'/img'));
+app.use(morgan('dev'));
 
 app.get('/', (req,res)=>{
       res.sendFile(__dirname + "/index.html");
