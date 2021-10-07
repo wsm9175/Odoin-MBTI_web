@@ -33,6 +33,14 @@ const qnaVer1_list  = [
                   { answer : '맛있겠다! 배고팠는데… 다행이야!', type: [ 'human' ] },
                   { answer : '냄새가 수상해… 배가 고파도 아무거나 먹을 수는 없지.', type: ['odoin'] }
             ]
+      },
+      {
+            id:10,
+            q: '평소 오도인으로 밝혀진 이들에 대한 마을 사람들의 증언을 구한다.' ,
+            a: [
+                  { answer : '오도인들은 인간과 다를 바 없어. 그저 우리와 같은 백성일 뿐이야', type: [ 'human' ] },
+                  { answer : '그래도 사람을 해칠 수 있는 괴물을 그냥 두는 건 위험해…! 아무리 우리를 도와줬다지만… 좀....', type: ['odoin'] }
+            ]
       }
 ]
 // version2
@@ -77,6 +85,163 @@ const qnaVer2_list = [
                   { answer : '나 살기도 바쁜데… 돕는 건 좀...', type: ['bad'] }
             ]
       }
+]
+
+const storyList =[
+      {
+            id: 1,
+            story : [
+                  {story_text : '1769년 문경. 마을에 비명 소리가 울려퍼진다.'},
+                  {story_text : '“꺄악-”'},
+                  {story_text : '서둘러 광장으로 달려나가보니 사람들이 광장에서 무언가를 둘러싸고 있다.'}
+            ]
+      },
+      {
+            id: 2,
+            story : [
+                  {story_text : '경상감사의 시체 주변을 맴돌고 있는 사람들.'},
+                  {story_text : '어느새 사람들은 시체가 아닌 경상감사 주변에 흩뿌려진 금은보화에 주목한다. '}
+            ]
+      },
+      {
+            id: 3,
+            story : [
+                  {story_text : '비켜라!'},
+                  {story_text : '결국 경상감사의 시체와 주변의 금은보화는 관리와 병사들이 나타나 다 수거해간다. '},
+                  {story_text : '시간이 흘러, 다음날.\n 이 사건을 해결하기 위해 한양에서 어사가 파견된다. \n 그 어사는 경상감사 주변에 있었던 사람들을 차근차근 수소문하기 시작하는데..'}
+            ]
+      },
+      {
+            id: 4,
+            story : [
+                  {story_text : '며칠 뒤, 마을에 벽보가 붙는다.'},
+                  {story_text : '웅성웅성...이게 무슨 일이래…?'},
+            ]
+      },
+      {
+            id: 5,
+            story : []
+      },
+      {
+            id: 6,
+            story : [
+                  {story_text : '벽보가 붙고 범가 사람들은 잡혀 옥에 갇히게 된다. \n허나 괴물의 힘으로 대부분의 범가 사람들은 잡히지 않고 도망간다. '},
+                  {story_text : '그 뒤, 도망친 오도인들이 사람을 죽인다는 소문이 파다하다.'},
+                  {story_text : '“괴물새끼들…..! 나랑 오도인들을 죽이러 갈 사람 없소?!”'}
+            ]
+      },
+      {
+            id: 7,
+            story : [
+                  {story_text : '그 때! 한 오도인이 나타나 백성들을 무자비하게 죽이기 시작한다.'},
+                  {story_text : '살려주세요...제발 목숨만은… \n역시 수환은 인간들을 선택하면 안됐어.'},
+            ]
+      },
+      {
+            id: 8,
+            story : [
+                  {story_text : '나는 겨우 도망쳐 집으로 돌아왔다.'},
+                  {story_text : '두려움에 떨고 있는 그때, 누군가 집앞을 다녀간듯 하다.\n집 앞을 자세히 보니 무언가 놓여져있는데… 다름 아닌 고기다!'},
+            ]
+      },
+      {
+            id: 9,
+            story : [
+                  {story_text : '며칠 후, 오도인과 군사들 간에 큰 전쟁이 있었다.'},
+                  {story_text : '마을의 평화를 다시 되찾고 싶은데…'},
+            ]
+      },
+      {
+            id: 10,
+            story : [
+                  {story_text : '전쟁에서 승리를 얻은 병사들은 조정으로 복귀한다.'},
+                  {story_text : '그렇게 조정에서 오도인들의 처분을 논의하게 된다.'},
+                  {story_text : '문경 마을 백성들의 증언이 필요하다는데…'}
+            ]
+      }
+]
+
+const arr_img = [
+      {
+            id : 1,
+            storyImages:[
+                  {storyImage: '/image1'},
+                  {storyImage: '/image1'},
+                  {storyImage: '/image1'}
+            ]
+      },
+      {
+            id : 2,
+            storyImages:[
+                  {storyImage: '/image2'},
+                  {storyImage: '/image2'},
+                  {storyImage: '/image2'}
+            ]
+      },
+      {
+            id : 3,
+            storyImages:[
+                  {storyImage: '/image3'},
+                  {storyImage: '/image3'},
+                  {storyImage: '/image3'}
+            ]
+      },
+      {
+            id : 4,
+            storyImages:[
+                  {storyImage: '/image4'},
+                  {storyImage: '/image4'},
+                  {storyImage: '/image4'}
+            ]
+      },
+      {
+            id : 5,
+            storyImages:[
+                  {storyImage: '/image5'},
+                  {storyImage: '/image5'},
+                  {storyImage: '/image5'}
+            ]
+      },
+      {
+            id : 6,
+            storyImages:[
+                  {storyImage: '/image6'},
+                  {storyImage: '/image6'},
+                  {storyImage: '/image6'}
+            ]
+      },
+      {
+            id : 7,
+            storyImages:[
+                  {storyImage: '/image7'},
+                  {storyImage: '/image7'},
+                  {storyImage: '/image7'}
+            ]
+      },
+      {
+            id : 8,
+            storyImages:[
+                  {storyImage: '/image8'},
+                  {storyImage: '/image8'},
+                  {storyImage: '/image8'}
+            ]
+      },
+      {
+            id : 9,
+            storyImages:[
+                  {storyImage: '/image9'},
+                  {storyImage: '/image9'},
+                  {storyImage: '/image9'}
+            ]
+      },
+      {
+            id : 10,
+            storyImages:[
+                  {storyImage: '/image10'},
+                  {storyImage: '/image10'},
+                  {storyImage: '/image10'}
+            ]
+      },
 ]
 
 

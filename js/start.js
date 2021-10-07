@@ -1,7 +1,7 @@
 const main = document.querySelector("#main") //메인 section이 담김
 const qna = document.querySelector("#qna");//qna section이 담김
 const result = document.querySelector("#result");
-const endPoint = 9;//질문 개수
+const endPoint = 10;//질문 개수
 //진행을 위한 변수 선언
 let pogress_ver1 = 0;
 let pogress_ver2 = 0;
@@ -24,11 +24,11 @@ function goResult(resultInfo){
 
 function cal_result(){
       var result;
-      if(score_list['odoin'] > score_list['human'] || score_list['good'] > score_list['bad']){
+      if(score_list['odoin'] > score_list['human'] && score_list['good'] > score_list['bad']){
             result = infoList[0];
-      }else if(score_list['odoin'] > score_list['human'] || score_list['good'] < score_list['bad']){
+      }else if(score_list['odoin'] > score_list['human'] && score_list['good'] < score_list['bad']){
             result = infoList[1];
-      }else if(score_list['odoin'] < score_list['human'] || score_list['good'] > score_list['bad']){
+      }else if(score_list['odoin'] < score_list['human'] && score_list['good'] > score_list['bad']){
             result = infoList[2];
       }else{
             result = infoList[3];
@@ -66,11 +66,23 @@ function addAnswer(answerText, qIdx, type){
       }, false);
 }
 
+function story_progress(qIdx){
+      if(qIdx > endPoint){
+            goResult(cal_result());
+            return;
+      }
+
+      let storyImage = document.getElementById('story_img');
+      s
+}
+
 function goNext(qIdx){
       if(qIdx > endPoint){
             goResult(cal_result());
             return;
       }
+      //qIdx - story list의 id라고 가정 그럼 여기서 스토리 진행하고 answer 버튼 및 qna 생성
+
       if(qIdx == 1 || qIdx == 5 || qIdx == 6 || qIdx ==8 || qIdx == 10){
             var q = document.querySelector('.qBox');
             q.innerHTML = qnaVer1_list[pogress_ver1].q;
