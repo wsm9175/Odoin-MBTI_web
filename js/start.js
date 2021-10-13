@@ -1,12 +1,16 @@
 const main = document.querySelector("#main") //메인 section이 담김
 const qna = document.querySelector("#qna");//qna section이 담김
 const result = document.querySelector("#result");
+const story = document.querySelector("#story");
 const endPoint = 10;//질문 개수
 //진행을 위한 변수 선언
 let pogress_ver1 = 0;
 let pogress_ver2 = 0;
 //결과 값 계산을 위한 변수
 let score_list = {odoin : 0, human : 0, good : 0, bad : 0};
+
+//스토리 진행을 위한 변수 선언
+let  storyImg_progress = 0;
 
 function goResult(resultInfo){
       qna.style.WebkitAnimation = "fadeOut 1s";
@@ -61,7 +65,7 @@ function addAnswer(answerText, qIdx, type){
                   for(let i = 0;i<children.length;i++){
                         children[i].style.display = 'none';
                   }
-                   goNext(++qIdx);
+                   story_progress(++qIdx);
             }, 450);
       }, false);
 }
@@ -71,9 +75,22 @@ function story_progress(qIdx){
             goResult(cal_result());
             return;
       }
-
+      //이미지 배열안에 qIdx에 해당하는 id에 들어있는 이미지 개수만큼 반복
       let storyImage = document.getElementById('story_img');
-      s
+      let img_index = 0;
+      storyImage.src = arr_img[qIdx-1].storyImages[img_index].storyImage;
+      storyImage.addEventListener("touchstart", function(){
+            img_index += 1;
+            console.log(img_index);
+            console.log(arr_img[qIdx-1].storyImages.length);
+            if(img_index == arr_img[qIdx-1].storyImages.length){
+                  console.log("gonext");
+                  goNext(qIdx);
+                  return;
+            }
+            storyImage.src = arr_img[qIdx-1].storyImages[img_index].storyImage;
+      });
+      //반복 후 goNext 작동
 }
 
 function goNext(qIdx){
@@ -81,8 +98,8 @@ function goNext(qIdx){
             goResult(cal_result());
             return;
       }
-      //qIdx - story list의 id라고 가정 그럼 여기서 스토리 진행하고 answer 버튼 및 qna 생성
-
+      qna.style.display = "block";
+      story.style.display = "none";
       if(qIdx == 1 || qIdx == 5 || qIdx == 6 || qIdx ==8 || qIdx == 10){
             var q = document.querySelector('.qBox');
             q.innerHTML = qnaVer1_list[pogress_ver1].q;
@@ -108,13 +125,28 @@ function begin(){
       main.style.WebkitAnimation = "fadeOut 1s";
       main.style.animation = "fadeOut 1s";
       setTimeout(() => {
-            qna.style.WebkitAnimation = "fadeIn 1s"
-            qna.style.animation = "fadeIn 1s"
+            story.style.WebkitAnimation = "fadeIn 1s"
+            story.style.animation = "fadeIn 1s"
             setTimeout(() => {
                   main.style.display = "none";
-                  qna.style.display = "block"; 
+                  story.style.display = "block"; 
             }, 450)
             let qIdx = 1;
-            goNext(qIdx);
+            story_progress(qIdx);
       }, 450);
 }
+
+
+function story_in(){
+      qna.style.WebkitAnimation = "fadeOut 1s";
+      qna.style.animation = "fadeOut 1s";
+      setTimeout(() => {
+            story.style.WebkitAnimation= "fadeIn 1s";
+            story.style.animation = "fadeIn 1s"
+            setTimeout(() => {
+                  qna.style.display = "none";
+                  story.style.display = "block";
+            }, 450)
+      }, 450);
+}
+

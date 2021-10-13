@@ -165,81 +165,89 @@ const arr_img = [
       {
             id : 1,
             storyImages:[
-                  {storyImage: '/image1'},
-                  {storyImage: '/image1'},
-                  {storyImage: '/image1'}
+                  {storyImage: '/001.jpg'},
+                  {storyImage: '/002.jpg'},
+                  {storyImage: '/003.jpg'},
+                  {storyImage: '/004.jpg'},
+                  {storyImage: '/005.jpg'},
+                  {storyImage: '/006-q.jpg'}
             ]
       },
       {
             id : 2,
             storyImages:[
-                  {storyImage: '/image2'},
-                  {storyImage: '/image2'},
-                  {storyImage: '/image2'}
+                  {storyImage: '/007.jpg'},
+                  {storyImage: '/008.jpg'},
+                  {storyImage: '/009-q.jpg'}
             ]
       },
       {
             id : 3,
             storyImages:[
-                  {storyImage: '/image3'},
-                  {storyImage: '/image3'},
-                  {storyImage: '/image3'}
+                  {storyImage: '/010.jpg'},
+                  {storyImage: '/011.jpg'},
+                  {storyImage: '/012.jpg'},
+                  {storyImage: '/013.jpg'},
+                  {storyImage: '/014.jpg'},
+                  {storyImage: '/015.jpg'},
+                  {storyImage: '/016-q.jpg'}
             ]
       },
       {
             id : 4,
             storyImages:[
-                  {storyImage: '/image4'},
-                  {storyImage: '/image4'},
-                  {storyImage: '/image4'}
+                  {storyImage: '/017.jpg'},
+                  {storyImage: '/018-q.jpg'}
             ]
       },
       {
             id : 5,
             storyImages:[
-                  {storyImage: '/image5'},
-                  {storyImage: '/image5'},
-                  {storyImage: '/image5'}
+                  {storyImage: '/019-q.jpg'}
             ]
       },
       {
             id : 6,
             storyImages:[
-                  {storyImage: '/image6'},
-                  {storyImage: '/image6'},
-                  {storyImage: '/image6'}
+                  {storyImage: '/020.jpg'},
+                  {storyImage: '/021.jpg'},
+                  {storyImage: '/022.jpg'},
+                  {storyImage: '/023.jpg'},
+                  {storyImage: '/024-q.jpg'}
             ]
       },
       {
             id : 7,
             storyImages:[
-                  {storyImage: '/image7'},
-                  {storyImage: '/image7'},
-                  {storyImage: '/image7'}
+                  {storyImage: '/025.jpg'},
+                  {storyImage: '/026.jpg'},
+                  {storyImage: '/027.jpg'},
+                  {storyImage: '/028-q.jpg'},
             ]
       },
       {
             id : 8,
             storyImages:[
-                  {storyImage: '/image8'},
-                  {storyImage: '/image8'},
-                  {storyImage: '/image8'}
+                  {storyImage: '/029.jpg'},
+                  {storyImage: '/030.jpg'},
+                  {storyImage: '/031.jpg'},
+                  {storyImage: '/032-q.jpg'}
             ]
       },
       {
             id : 9,
             storyImages:[
-                  {storyImage: '/image9'},
-                  {storyImage: '/image9'},
-                  {storyImage: '/image9'}
+                  {storyImage: '/033.jpg'},
+                  {storyImage: '/034.jpg'},
+                  {storyImage: '/035-q.jpg'},
             ]
       },
       {
             id : 10,
             storyImages:[
-                  {storyImage: '/image10'},
-                  {storyImage: '/image10'},
-                  {storyImage: '/image10'}
+                  {storyImage: '/036.jpg'},
+                  {storyImage: '/037.jpg'},
+                  {storyImage: '/038-q.jpg'}
             ]
       },
 ]
